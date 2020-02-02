@@ -168,3 +168,6 @@
 ./scope-package/scope-5.mx
 ./scope-package/scope-1.mx
 ./scope-package/scope-4.mx
+./codeforces-package/1145A.mx
+./codeforces-package/399A.mx
+./codeforces-package/4A.mx
