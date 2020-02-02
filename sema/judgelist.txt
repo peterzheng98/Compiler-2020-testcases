@@ -38,6 +38,7 @@
 ./basic-package/basic-42.mx
 ./basic-package/basic-6.mx
 ./basic-package/basic-52.mx
+./basic-package/basic-71.mx
 ./basic-package/basic-37.mx
 ./basic-package/basic-66.mx
 ./basic-package/basic-26.mx

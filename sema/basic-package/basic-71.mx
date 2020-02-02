@@ -1,11 +1,10 @@
 /*
 Test Package: Sema_Local_Preview
 Test Target: Basic
-Author: 16' Yuxi Liu
-Time: 2019-11-11
-Verdict: Fail
-Comment: Array declaration is not correct.
-Origin Package: Semantic Pretest
+Author: Pikachu
+Time: 2020-02-02
+Verdict: Success
+Origin Package: Semantic
 */
 int main() {
     int a;
@@ -25,7 +24,7 @@ int main() {
                 flag = true;
             }
             bool a;
-            string b;                                                                                                 {int [][][][][][][][][][][][][][][][][][][][] a = new int [1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][][l][][][];
+            string b;                                                                                                 {int [][][][][][][][][][][][][][][][][][][][] a = new int [1][1][1][1][1][1][1][1][1][1][1][1][1][1][1][][][][][];
                 {
                     return 0;
                 }
