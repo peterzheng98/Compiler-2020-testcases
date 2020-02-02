@@ -6,7 +6,7 @@ Time: 2019-10-20
 Verdict: Success
 Origin Package: Semantic Extended
 */
-A b;
+A b = null;
 int c = b.a;
 
 int main() {
