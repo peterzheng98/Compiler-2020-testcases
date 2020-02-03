@@ -171,3 +171,10 @@
 ./codeforces-package/1145A.mx
 ./codeforces-package/399A.mx
 ./codeforces-package/4A.mx
+./codeforces-package/1A.mx
+./codeforces-package/69A.mx
+./codeforces-package/71A.mx
+./codeforces-package/122A.mx
+./codeforces-package/158A.mx
+./codeforces-package/231A.mx
+./codeforces-package/263A.mx
