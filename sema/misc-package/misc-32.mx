@@ -4,7 +4,7 @@ Test Target: Misc
 Author: Pikachu
 Time: 2019-11-11
 Verdict: Fail
-Comment: If condition can only be bool(Line 7), -> not defined(Line 51), Duplicated variables(Line 147)
+Comment: If condition can only be bool(Line 16), -> not defined(Line 61), Duplicated variables(Line 156)
 Origin Package: Semantic Pretest
 */
 // A changed solution for 1630 on SJTU Online Judge 

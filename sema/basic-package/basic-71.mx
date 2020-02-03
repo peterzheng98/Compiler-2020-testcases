@@ -17,7 +17,7 @@ int main() {
         }
         int b;
         bool c;
-        string a;
+        int a;
         {
             int c;
             if (a + a - a == a) {

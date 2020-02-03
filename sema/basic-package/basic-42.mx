@@ -4,7 +4,7 @@ Test Target: Basic
 Author: 16' Xuehui Sun
 Time: 2019-11-11
 Verdict: Fail
-Comment: Duplicate name.
+Comment: Duplicate name for function name and class name.
 Origin Package: Semantic Pretest
 */
 class x
