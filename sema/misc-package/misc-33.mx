@@ -33,7 +33,7 @@ int main()
 (new int[2][])[3];
 	u = null;
 	string s = toString(getInt());
-	for (k = 1; k < (s+"thisisastring//\\\n\r").substring(1,3).ord(0); k = k+u.size())
+	for (k = 1; k < (s+"thisisastring//\\\n").substring(1,3).ord(0); k = k+u.size())
 	{
 		println(getString());
 	}
