@@ -13,5 +13,5 @@ int main() {
 	B C = new B;
 	AA();
 	A = 10;
-	int B;
+	int bbc;
 }
