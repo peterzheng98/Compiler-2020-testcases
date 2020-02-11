@@ -11,9 +11,9 @@ int[] a = new int[20];
 int jud(int x){
 	int i,j;
 	for(i=0;i<n/x;i++){
-		int flag=0;
+		bool flag=false;
 		for(j=0;j<x-1;j++){
-			if(a[i*x+j]>a[i*x+j+1])flag=1;
+			if(a[i*x+j]>a[i*x+j+1])flag=true;
 		}
 		if(!flag)return 1;
 	}

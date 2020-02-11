@@ -34,12 +34,12 @@ class point {
 		retval.set(y * other.z - z * other.y, z * other.x - x * other.z, x * other.y - y * other.x);
 		return retval;
 	}
-	point add(point other) {
+	void add(point other) {
 		x = x + other.x;
 		y = y + other.y;
 		z = z + other.z;
 	}
-	point sub(point other) {
+	void sub(point other) {
 		x = x - other.x;
 		y = y - other.y;
 		z = z - other.z;

@@ -11,6 +11,7 @@ int a = 0;
 class A{
     int f(){
        b = a; 
+       return b;
     }
     int b;
 };

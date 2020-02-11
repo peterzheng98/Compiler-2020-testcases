@@ -19,6 +19,7 @@ int B()
 		int c;;;;{}
 		int s;(s+1);
 	}
+	return c;
 
 }
 int main()

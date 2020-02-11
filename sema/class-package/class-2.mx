@@ -27,6 +27,7 @@ class naive
     {
         println(news.learnmore);
         println("news.learnmore");
+        return 1;
     }
 
 };

@@ -45,6 +45,7 @@ int getPrime(int N) {
         }
         count = 2;
     }
+    return 0;
 }
 
 //int getResult(int N, int k1, int k2, int* b, int* gps, int* prime, int result[170][170]) {
@@ -75,6 +76,7 @@ int printF(int k1, int k2, int k3) {
     }
 //    printf("%c", '\n');
     print("\n");
+    return 0;
 }
 
 int main() {
