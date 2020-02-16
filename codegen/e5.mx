@@ -27,7 +27,7 @@ int main(){
         s = getString();
 		l = s.length();
 		if(l > 10)
-            println(s.substring(0, 1) + toString(l-2) + s.substring(l-1, l))
+            println(s.substring(0, 1) + toString(l-2) + s.substring(l-1, l));
 			// printf("%c%d%c\n",s[0],l-2,s[l-1]);
 		else
 			// printf("%s\n",s);

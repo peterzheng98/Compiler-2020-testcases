@@ -64,7 +64,7 @@ int j;
 class rec {
     int num;
     int c;
-}
+};
 
 rec[] b = new rec[5];
 
