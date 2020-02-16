@@ -1018,7 +1018,7 @@ class node {
 	int key;
     int data;
 	node next;
-}
+};
 node[] table;
 int getHash(int n) {
 	return (n * 237) % hashsize;
