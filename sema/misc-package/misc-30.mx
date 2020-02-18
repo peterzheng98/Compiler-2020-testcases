@@ -29,7 +29,7 @@ void origin(int N)
 }
 
 //int getPrime(int N, int* primeCount, int* b, int* gps, int* prime) {
-int getPrime(int N) {
+void getPrime(int N) {
     int count;
 	int i;
     count = 2;
@@ -61,7 +61,7 @@ int getResult(int N, int k1, int k2) {
     return result[k1][k2];
 }
 
-int printF(int k1, int k2, int k3) {
+void printF(int k1, int k2, int k3) {
 //    printf("%d", k1);
 	print(toString(k1));
     while (k3 > 0) {
