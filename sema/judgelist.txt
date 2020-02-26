@@ -107,11 +107,9 @@
 ./array-package/array-5.mx
 ./array-package/array-4.mx
 ./array-package/array-10.mx
-./condition.mx
 ./loop-package/loop-3.mx
 ./loop-package/loop-2.mx
 ./loop-package/loop-1.mx
-./bool-compare.mx
 ./string-package/string-1.mx
 ./symbol-package/symbol-7.mx
 ./symbol-package/symbol-3.mx
@@ -142,7 +140,6 @@
 ./class-package/class-7.mx
 ./class-package/class-6.mx
 ./class-package/class-2.mx
-./test.mx
 ./misc-package/misc-3.mx
 ./misc-package/misc-29.mx
 ./misc-package/misc-7.mx
