@@ -9,12 +9,29 @@ import os
 import sys
 
 
-def include(filename, kv: dict):
+def include(line: str, kv=None):
+    if kv is None:
+        kv = {}
+    args = line.split()
+    args.pop(0)  # pop //#include
+    filename = args[0].strip()
+    kvs = [arg.strip().split(sep=":") for arg in args[1:]]
+    for k, v in kvs:
+        kv[k] = v
+
+    directory, _ = os.path.split(filename)
+    cwd = os.getcwd()
+    if directory:
+        os.chdir(directory)
     with open(filename, "r") as f:
         for line in f.readlines():
             for old, new in kv.items():
                 line = line.replace(old, new)
+            if line.startswith("//#include"):
+                include(line, kv=kv.copy())
+                continue
             print(line, end="")
+    os.chdir(cwd)
 
 
 def main():
@@ -32,12 +49,7 @@ def main():
             if not line.startswith("//#include"):
                 print("ignoring " + line, file=sys.stderr)
                 continue
-            args = line.split()
-            args.pop(0)  # pop //#include
-            filename = args[0].strip()
-            kvs = [arg.strip().split(sep=":") for arg in args[1:]]
-            kv = {k: v for k, v in kvs}
-            include(filename, kv)
+            include(line)
 
 
 if __name__ == '__main__':
