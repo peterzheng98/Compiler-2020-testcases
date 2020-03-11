@@ -1,6 +1,8 @@
 .DS_store
 .DS_Store
 testcases
+test.mx
+.idea/
 
 # Prerequisites
 *.d
