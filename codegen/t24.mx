@@ -61,7 +61,7 @@ void origin(int N)
     }	
 }
 
-int search(int x, int y, int z)
+void search(int x, int y, int z)
 {
 	int s;
 	int i;
