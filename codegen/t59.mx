@@ -33,6 +33,7 @@ int main(){
     N = getInt();
     for (i = 0; i < K; ++i) {
         primes[i] = getInt();
+        pindex[i] = 0;
     }
     ans[0] = 1;
     while(point <= N){
