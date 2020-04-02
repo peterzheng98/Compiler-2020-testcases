@@ -15,7 +15,7 @@ int main() {
 	return yhy(c.b.a.b.a.v[10]);
 }
 class A {
-	int [] v = new int[3];
+	int [] v;
 	B b;
 };
 class B {
