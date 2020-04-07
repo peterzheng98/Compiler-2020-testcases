@@ -75,3 +75,11 @@
 ./e10.mx
 ./t38.mx
 ./t28.mx
+./std/queue.mt
+./sorting/bubble_sort.mx
+./sorting/selection_sort.mx
+./sorting/quick_sort.mx
+./sorting/merge_sort.mx
+./shortest_path/floyd.mx
+./shortest_path/spfa.mx
+./shortest_path/dijkstra.mx

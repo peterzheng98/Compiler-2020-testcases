@@ -52,7 +52,7 @@ class Slice_TYPE {
   TYPE[] storage;
   int beg;
   int end;
-}
+};
 
 
 Slice_TYPE makeSlice_TYPE(TYPE[] arr) {

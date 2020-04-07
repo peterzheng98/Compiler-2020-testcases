@@ -51,4 +51,4 @@ class Queue_TYPE {
   TYPE[] storage;
   int beg;
   int end;
-}
+};

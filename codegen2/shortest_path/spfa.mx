@@ -1,3 +1,12 @@
+/*
+//#dump Test Package: Codegen
+//#dump Author: Yunwei Ren
+//#input shortest_path.1.in
+//#output shortest_path.1.ans
+//#dump ExitCode: 0
+//#dump InstLimit: -1
+*/
+
 //#include ../std/queue.mh TYPE:int
 //#include edge_list.mh
 

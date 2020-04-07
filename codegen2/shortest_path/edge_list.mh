@@ -2,7 +2,7 @@ class Edge {
   int from;
   int to;
   int weight;
-}
+};
 
 class EdgeList {
   void init(int n, int m) {
@@ -42,4 +42,4 @@ class EdgeList {
   int[] next;
   int[] first;
   int size;
-}
+};

@@ -1,3 +1,12 @@
+/*
+//#dump Test Package: Codegen
+//#dump Author: Yunwei Ren
+//#input sorting.in
+//#output sorting.ans
+//#dump ExitCode: 0
+//#dump InstLimit: -1
+*/
+
 int partition(int[] a, int p, int r) {
   int pivot = a[r];
   int i = p - 1;

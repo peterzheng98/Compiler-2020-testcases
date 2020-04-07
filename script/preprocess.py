@@ -3,6 +3,9 @@
 # examples
 # //#include filename
 # //#include filename TYPE:int
+# //#input test.in
+# //#output test.ans
+# //#dump ...
 
 import argparse
 import os
@@ -34,6 +37,22 @@ def include(line: str, kv=None):
     os.chdir(cwd)
 
 
+def input_or_output(line: str):
+    assert line.startswith("//#input") or line.startswith("//#output")
+    filename = line.split()[1]
+    is_input = line.startswith("//#input")
+    print("Input:" if is_input else "Output:")
+    print("=== " + line.split()[0][3:] + " ===")
+    with open(filename) as f:
+        print(f.read())
+    print("=== end ===")
+
+
+def dump(line: str):
+    assert line.startswith("//#dump")
+    print(line[len("//#dump"):].strip())
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("input_file")
@@ -46,10 +65,17 @@ def main():
             if not line.startswith("//#"):
                 print(line, end="")
                 continue
-            if not line.startswith("//#include"):
-                print("ignoring " + line, file=sys.stderr)
+            if line.startswith("//#include"):
+                include(line)
                 continue
-            include(line)
+            if line.startswith("//#input") or line.startswith("//#output"):
+                input_or_output(line)
+                continue
+            if line.startswith("//#dump"):
+                dump(line)
+                continue
+            print("ignoring " + line, file=sys.stderr)
+            continue
 
 
 if __name__ == '__main__':

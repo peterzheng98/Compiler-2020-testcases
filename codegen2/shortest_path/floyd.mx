@@ -1,3 +1,12 @@
+/*
+//#dump Test Package: Codegen
+//#dump Author: Yunwei Ren
+//#input shortest_path.1.in
+//#output shortest_path.1.ans
+//#dump ExitCode: 0
+//#dump InstLimit: -1
+*/
+
 // input:
 // n m
 // u_1 v_1 w_1
@@ -39,9 +48,9 @@ int main() {
   int i;
   int j;
   int k;
-  for (i = 0; i < n; ++i) {
-    for (j = 0; j < n; ++j) {
-      for (k = 0; k < n; ++k) {
+  for (k = 0; k < n; ++k) {
+    for (i = 0; i < n; ++i) {
+      for (j = 0; j < n; ++j) {
         if (a[i][j] > a[i][k] + a[k][j])
           a[i][j] = a[i][k] + a[k][j];
       }

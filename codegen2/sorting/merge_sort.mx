@@ -1,5 +1,13 @@
-//#include ../std/slice.mh TYPE:int
+/*
+//#dump Test Package: Codegen
+//#dump Author: Yunwei Ren
+//#input sorting.in
+//#output sorting.ans
+//#dump ExitCode: 0
+//#dump InstLimit: -1
+*/
 
+//#include ../std/slice.mh TYPE:int
 
 int[] merge(Slice_int l, Slice_int r) {
   if (l.size() == 0)

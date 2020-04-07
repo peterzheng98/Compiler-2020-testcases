@@ -1,3 +1,18 @@
+/*
+Test Package: Codegen
+Author: Yunwei Ren
+Input:
+=== input ===
+=== end ===
+Output:
+=== output ===
+Passed tests.
+
+=== end ===
+ExitCode: 0
+InstLimit: -1
+*/
+
 //#include queue.mh TYPE:int
 
 
