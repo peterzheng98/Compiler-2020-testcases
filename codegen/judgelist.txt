@@ -83,3 +83,5 @@
 ./shortest_path/floyd.mx
 ./shortest_path/spfa.mx
 ./shortest_path/dijkstra.mx
+./t69.mx
+./t70.mx
