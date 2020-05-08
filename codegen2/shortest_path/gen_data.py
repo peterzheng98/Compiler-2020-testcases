@@ -4,7 +4,7 @@ import numpy as np
 INF = 2 ** 30
 
 
-def random_graph(n, p):
+def random_graph(n, p, low=1, high=1000):
     """
     Generate a random simple graph where the weight of each edge is in [1, 100]
 
@@ -12,13 +12,15 @@ def random_graph(n, p):
     :param p: The probability an edge presents
     :return: A list of edges. Each edge is a triple (from, to, weight)
     """
+    adj = np.random.rand(n, n)
+    adj = (adj < p).astype(int)
+    weights = low + (high - low) * np.random.rand(n, n)
     edges = []
     for u in range(n):
         for v in range(n):
-            if u == v:
+            if u == v or not adj[u][v]:
                 continue
-            if np.random.uniform() < p:
-                edges.append((u, v, np.random.randint(low=1, high=100)))
+            edges.append((u, v, weights[u][v]))
     return edges
 
 

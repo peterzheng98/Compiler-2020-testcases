@@ -7,7 +7,7 @@ class Kv {
 
   int k;
   int v;
-}
+};
 
 int main() {
   Heap_Kv heap = new Heap_Kv();
